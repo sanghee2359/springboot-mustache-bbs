@@ -4,3 +4,16 @@ server:
     encoding:
       force-response: true
 
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localshot:8080/like-lion-db
+    username: root
+    password: password
+  # ??? SQL ?? ??
+  jpa:
+    show-sql: true
+  # hibernate ??
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    database: mysql
+    hibernate.ddl-auto: update # ???? ? create ?? ? ?
